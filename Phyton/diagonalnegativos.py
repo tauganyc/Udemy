@@ -1,5 +1,5 @@
 e=int(input("Qual a ordem da matriz? "))
-mat: [[int]] = [[0 for x in range(e)] for x in range(e)]
+mat: list[list[int]] = [[0 for x in range(e)] for x in range(e)]
 negativos=0
 for i in range (0,e):
     for j in range (0,e):
@@ -8,5 +8,5 @@ for i in range (0,e):
             negativos=negativos+1
 print("Diagonal principal")
 for i in range(e):
-    print(f"{mat[i][j]} ",end="")
+    print(f"{mat[i][i]} ",end="")
 print(f"\nquantidade de negativos = {negativos}")
